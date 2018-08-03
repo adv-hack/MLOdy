@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PollingService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PollingService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Rules">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AgeLower" type="xs:short" />
+      <xs:element minOccurs="0" name="AgeUpper" type="xs:short" />
+      <xs:element minOccurs="0" name="Occurence" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="Parameter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RangeLower" type="xs:short" />
+      <xs:element minOccurs="0" name="RangeUpper" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="TimeWindow" nillable="true" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rules" nillable="true" type="tns:Rules" />
+  <xs:complexType name="ArrayOfRules">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rules" nillable="true" type="tns:Rules" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRules" nillable="true" type="tns:ArrayOfRules" />
+  <xs:complexType name="PersonDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionTaken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ActionUpdated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Age" type="xs:short" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parameter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonId" type="xs:int" />
+      <xs:element minOccurs="0" name="Processed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Reading" type="xs:short" />
+      <xs:element minOccurs="0" name="RecordTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonDetails" nillable="true" type="tns:PersonDetails" />
+</xs:schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HealthDataModelStoreContainer" CdmEntityContainer="HealthDataEntities">
+    <EntitySetMapping Name="HealthDataAccesses">
+      <EntityTypeMapping TypeName="HealthDataModel.HealthDataAccess">
+        <MappingFragment StoreEntitySet="HealthDataAccess">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Secret" ColumnName="Secret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthDataCollecteds">
+      <EntityTypeMapping TypeName="HealthDataModel.HealthDataCollected">
+        <MappingFragment StoreEntitySet="HealthDataCollected">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="HealthMetric" ColumnName="HealthMetric" />
+          <ScalarProperty Name="JsonString" ColumnName="JsonString" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PredictiveStatus" ColumnName="PredictiveStatus" />
+          <ScalarProperty Name="DateCollected" ColumnName="DateCollected" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="HealthDataModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Forename" ColumnName="Forename" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="HealthId" ColumnName="HealthId" />
+          <ScalarProperty Name="SecretKey" ColumnName="SecretKey" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedDatee" ColumnName="CreatedDatee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

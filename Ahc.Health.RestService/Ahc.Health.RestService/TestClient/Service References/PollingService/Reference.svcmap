@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0a8ea748-52f8-40ec-b0de-cab338eb954d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49436/ServicePolling.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicePolling.xsd" MetadataType="Schema" ID="9f9ff6df-a005-41e5-81e3-e4d2f0cb0f7e" SourceId="1" SourceUrl="http://localhost:49436/ServicePolling.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicePolling1.xsd" MetadataType="Schema" ID="04d553d2-8ca4-4568-9016-269fad918296" SourceId="1" SourceUrl="http://localhost:49436/ServicePolling.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicePolling.disco" MetadataType="Disco" ID="ea8fe005-ae2e-4570-8f09-050c39cd0a0e" SourceId="1" SourceUrl="http://localhost:49436/ServicePolling.svc?disco" />
+    <MetadataFile FileName="ServicePolling2.xsd" MetadataType="Schema" ID="65faaa73-6de9-4720-917b-dc38b6269f03" SourceId="1" SourceUrl="http://localhost:49436/ServicePolling.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicePolling.wsdl" MetadataType="Wsdl" ID="7702ce61-e7d4-4f78-b6fc-901d11930660" SourceId="1" SourceUrl="http://localhost:49436/ServicePolling.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
